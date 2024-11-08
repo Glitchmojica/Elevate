@@ -151,3 +151,12 @@ footer {
     background-color: #333;
     color: #ddd;
 }
+
+#chibi-einstein {
+    width: 100px;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
