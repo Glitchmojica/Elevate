@@ -135,11 +135,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-size: 16px;
 }
 
 nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
+    color: #FFD700; /* Text color change on hover */
 }
 
 /* Footer */
