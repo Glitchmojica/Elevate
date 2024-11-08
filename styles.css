@@ -9,7 +9,7 @@ body {
 
 /* Index page background */
 #index-page {
-    background-image: url('../images/elevator.jpg');
+    background-image: url('elevator.jpg');
     background-size: cover;
     background-position: center;
     color: white; /* Text color for the index page */
@@ -17,7 +17,7 @@ body {
 
 /* Post1 page background */
 #post1-page {
-    background-image: url('../images/blogging.jpg');
+    background-image: url('blogging.jpg');
     background-size: cover;
     background-position: center;
     color: white; /* Text color for the blog post page */
@@ -25,7 +25,7 @@ body {
 
 /* Music page background */
 #music-page {
-    background-image: url('../images/moshpit.jpeg');
+    background-image: url('moshpit.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -33,7 +33,7 @@ body {
 
 /* Art page background */
 #art-page {
-    background-image: url('../images/artwork.jpg');
+    background-image: url('artwork.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -41,7 +41,7 @@ body {
 
 /* Clothing page background */
 #clothing-page {
-    background-image: url('../images/clothing.jpg');
+    background-image: url('clothing.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -49,7 +49,7 @@ body {
 
 /* About/Contact page background */
 #about-contact-page {
-    background-image: url('../images/contact.jpg');
+    background-image: url('contact.jpg');
     background-size: cover;
     background-position: center;
     color: white;
