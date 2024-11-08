@@ -13,6 +13,14 @@ body {
     color: white;
 }
 
+/* Checkout Page background */
+#checkout-page {
+    background-image: url('checkout.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
 /* General section styles */
 section {
     margin: 50px auto;
@@ -35,8 +43,15 @@ section {
     position: relative;
 }
 
-#quote-text, #quote-author {
+#quote-text {
+    font-size: 1.8em;
+    margin-bottom: 10px;
     color: #4E3B31;
+}
+
+#quote-author {
+    font-size: 1.2em;
+    color: #555;
 }
 
 #chibi-einstein {
@@ -61,29 +76,26 @@ section {
     100% { transform: translateX(-50%) rotate(-10deg); }
 }
 
-/* Navigation Menu */
+/* Navigation menu padding */
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
-    background-color: #4E3B31;
 }
 
 nav ul li {
-    position: relative;
+    display: inline;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: background-color 0.3s;
+    padding: 10px;
 }
 
 nav ul li a:hover {
-    background-color: #333;
+    background-color: #555;
     border-radius: 5px;
 }
 
@@ -105,4 +117,70 @@ footer {
     max-width: 30%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkout Page Styles */
+.checkout-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#cart-summary p {
+    font-size: 1.1em;
+    color: #4E3B31;
+}
+
+.checkout-section h1, .checkout-section h2 {
+    color: #4E3B31;
+}
+
+/* Buttons */
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    background-color: rgba(250, 243, 224, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #4E3B31;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
