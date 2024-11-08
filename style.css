@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4E3B31; /* Earth tone text color */
+}
+
+/* Background images for specific pages */
+
+/* Index page background */
+#index-page {
+    background-image: url('../images/elevator.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color for the index page */
+}
+
+/* Post1 page background */
+#post1-page {
+    background-image: url('../images/blogging.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color for the blog post page */
+}
+
+/* Music page background */
+#music-page {
+    background-image: url('../images/moshpit.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Art page background */
+#art-page {
+    background-image: url('../images/artwork.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Clothing page background */
+#clothing-page {
+    background-image: url('../images/clothing.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* About/Contact page background */
+#about-contact-page {
+    background-image: url('../images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* General section styles */
+section {
+    margin: 50px auto;
+    width: 80%;
+    background-color: rgba(250, 243, 224, 0.8); /* Off-white background with transparency */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners for sections */
+    color: #4E3B31;
+}
+
+/* Quote Section */
+#quote-section {
+    text-align: center;
+    margin: 50px auto;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#quote-container {
+    position: relative;
+    z-index: 1;
+}
+
+#quote-text {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #4E3B31;
+}
+
+#quote-author {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#chibi-einstein {
+    width: 100px;
+    position: absolute;
+    bottom: -120px; /* Start out of view */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#quote-container:hover #chibi-einstein {
+    opacity: 1;
+    bottom: 0; /* Slide into view */
+    animation: dance 1s infinite alternate ease-in-out;
+}
+
+@keyframes dance {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    50% { transform: translateX(-50%) rotate(10deg); }
+    100% { transform: translateX(-50%) rotate(-10deg); }
+}
+
+/* Buttons */
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Navigation menu padding */
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white; /* Keep navigation link color white */
+    text-decoration: none; /* Ensure links have no underline */
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #4E3B31; /* Earth tone text color in footer */
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery img {
+    max-width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Styles */
+#contact-section {
+    margin-top: 40px;
+}
+
+#contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Darker color for form labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #faf3e0; /* Soft earth tone background for inputs */
+    color: #4E3B31; /* Earth tone text color for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4E3B31; /* Earth tone focus color */
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #4E3B31; /* Earth tone button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #333; /* Darker hover effect for submit button */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #contact-section form {
+        padding: 15px;
+    }
+}
+
+/* General section styles for music */
+#music-section {
+    margin: 50px auto;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(250, 243, 224, 0.9); /* Soft background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.video-post {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-post h3 {
+    font-size: 24px;
+    color: #4E3B31;
+    margin-bottom: 10px;
+}
+
+.video-post iframe {
+    margin: 20px 0;
+    border: 2px solid #4E3B31;
+    border-radius: 8px;
+}
+
+.video-post p {
+    font-size: 16px;
+    color: #4E3B31;
+    text-align: justify;
+}
+
+/* Checkout Page */
+.checkout-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#cart-summary p {
+    font-size: 1.1em;
+    color: #4E3B31;
+}
+
+.checkout-section h1, .checkout-section h2 {
+    color: #4E3B31;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    background-color: rgba(250, 243, 224, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #4E3B31;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
