@@ -1,18 +1,19 @@
-body.checkout-page {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #4E3B31;
 }
 
-body.checkout-page #checkout-page {
+
+#checkout-page {
     background-image: linear-gradient(to bottom right, #333, #555);
     color: white;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* General section styles */
-body.checkout-page section {
+section {
     margin: 50px auto;
     width: 80%;
     padding: 20px;
@@ -22,7 +23,7 @@ body.checkout-page section {
 }
 
 /* Checkout Section */
-body.checkout-page .checkout-section {
+.checkout-section {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 40px;
     border-radius: 15px;
@@ -39,7 +40,7 @@ body.checkout-page .checkout-section {
 }
 
 /* Cart Summary */
-body.checkout-page #cart-summary {
+#cart-summary {
     font-size: 1.1em;
     background-color: rgba(250, 243, 224, 0.1);
     padding: 20px;
@@ -49,7 +50,7 @@ body.checkout-page #cart-summary {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-body.checkout-page #cart-summary p {
+#cart-summary p {
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -57,18 +58,18 @@ body.checkout-page #cart-summary p {
 }
 
 /* Payment Form */
-body.checkout-page .payment-form {
+.payment-form {
     display: flex;
     flex-direction: column;
 }
 
-body.checkout-page .payment-form label {
+.payment-form label {
     margin-top: 15px;
     font-weight: bold;
     color: #ddd;
 }
 
-body.checkout-page .payment-form input {
+.payment-form input {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -78,17 +79,17 @@ body.checkout-page .payment-form input {
     box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.2);
 }
 
-body.checkout-page .payment-form input::placeholder {
+.payment-form input::placeholder {
     color: #aaa;
 }
 
-body.checkout-page .payment-form input:focus {
+.payment-form input:focus {
     outline: 2px solid #FFD700;
     background-color: #666;
 }
 
 /* Confirm Button */
-body.checkout-page .confirm-button {
+.confirm-button {
     margin-top: 30px;
     padding: 15px;
     background-color: #FFD700;
@@ -100,89 +101,44 @@ body.checkout-page .confirm-button {
     transition: all 0.3s ease;
 }
 
-body.checkout-page .confirm-button:hover {
+.confirm-button:hover {
     background-color: #FFA500;
     transform: translateY(-2px);
     box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
 }
 
-body.checkout-page .confirm-button:active {
+.confirm-button:active {
     transform: translateY(2px);
     box-shadow: 0px 2px 5px rgba(255, 165, 0, 0.5);
 }
 
 /* Navigation */
-body.checkout-page nav ul {
+nav ul {
     list-style-type: none;
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
 
-body.checkout-page nav ul li {
+nav ul li {
     display: inline;
 }
 
-body.checkout-page nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
 
-body.checkout-page nav ul li a:hover {
+nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
 }
 
 /* Footer */
-body.checkout-page footer {
+footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: #ddd;
-}
-
-/* Other Section Styles */
-body.checkout-page .gallery {
-    display: flex;
-    justify-content: space-around;
-}
-
-body.checkout-page .gallery img {
-    max-width: 30%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Product Section */
-body.checkout-page .product-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-body.checkout-page .product {
-    background-color: rgba(250, 243, 224, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    text-align: center;
-}
-
-body.checkout-page .add-to-cart {
-    background-color: #4E3B31;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-body.checkout-page .checkout-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
 }
