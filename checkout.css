@@ -1,18 +1,18 @@
-body {
+body.checkout-page {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #4E3B31;
 }
 
-#checkout-page {
+body.checkout-page #checkout-page {
     background-image: linear-gradient(to bottom right, #333, #555);
     color: white;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* General section styles */
-section {
+body.checkout-page section {
     margin: 50px auto;
     width: 80%;
     padding: 20px;
@@ -22,7 +22,7 @@ section {
 }
 
 /* Checkout Section */
-.checkout-section {
+body.checkout-page .checkout-section {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 40px;
     border-radius: 15px;
@@ -39,7 +39,7 @@ section {
 }
 
 /* Cart Summary */
-#cart-summary {
+body.checkout-page #cart-summary {
     font-size: 1.1em;
     background-color: rgba(250, 243, 224, 0.1);
     padding: 20px;
@@ -49,7 +49,7 @@ section {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-#cart-summary p {
+body.checkout-page #cart-summary p {
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -57,18 +57,18 @@ section {
 }
 
 /* Payment Form */
-.payment-form {
+body.checkout-page .payment-form {
     display: flex;
     flex-direction: column;
 }
 
-.payment-form label {
+body.checkout-page .payment-form label {
     margin-top: 15px;
     font-weight: bold;
     color: #ddd;
 }
 
-.payment-form input {
+body.checkout-page .payment-form input {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -78,17 +78,17 @@ section {
     box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.2);
 }
 
-.payment-form input::placeholder {
+body.checkout-page .payment-form input::placeholder {
     color: #aaa;
 }
 
-.payment-form input:focus {
+body.checkout-page .payment-form input:focus {
     outline: 2px solid #FFD700;
     background-color: #666;
 }
 
 /* Confirm Button */
-.confirm-button {
+body.checkout-page .confirm-button {
     margin-top: 30px;
     padding: 15px;
     background-color: #FFD700;
@@ -100,42 +100,42 @@ section {
     transition: all 0.3s ease;
 }
 
-.confirm-button:hover {
+body.checkout-page .confirm-button:hover {
     background-color: #FFA500;
     transform: translateY(-2px);
     box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
 }
 
-.confirm-button:active {
+body.checkout-page .confirm-button:active {
     transform: translateY(2px);
     box-shadow: 0px 2px 5px rgba(255, 165, 0, 0.5);
 }
 
 /* Navigation */
-nav ul {
+body.checkout-page nav ul {
     list-style-type: none;
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
 
-nav ul li {
+body.checkout-page nav ul li {
     display: inline;
 }
 
-nav ul li a {
+body.checkout-page nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
 
-nav ul li a:hover {
+body.checkout-page nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
 }
 
 /* Footer */
-footer {
+body.checkout-page footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
@@ -143,25 +143,25 @@ footer {
 }
 
 /* Other Section Styles */
-.gallery {
+body.checkout-page .gallery {
     display: flex;
     justify-content: space-around;
 }
 
-.gallery img {
+body.checkout-page .gallery img {
     max-width: 30%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Product Section */
-.product-section {
+body.checkout-page .product-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.product {
+body.checkout-page .product {
     background-color: rgba(250, 243, 224, 0.8);
     padding: 20px;
     border-radius: 10px;
@@ -169,7 +169,7 @@ footer {
     text-align: center;
 }
 
-.add-to-cart {
+body.checkout-page .add-to-cart {
     background-color: #4E3B31;
     color: white;
     padding: 10px 15px;
@@ -178,7 +178,7 @@ footer {
     cursor: pointer;
 }
 
-.checkout-button {
+body.checkout-page .checkout-button {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #333;
