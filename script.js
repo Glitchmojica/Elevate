@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const name = document.getElementById('card-name').value;
         const number = document.getElementById('card-number').value;
         const expiry = document.getElementById('expiry-date').value;
-        const cvv = document.getElementById('cvv').value;
+        const cvvjs  = document.getElementById('cvv').value;
 
         if (!name || !number || !expiry || !cvv) {
             alert('Please fill in all fields.');
